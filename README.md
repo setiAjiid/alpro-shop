@@ -71,7 +71,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Teknologi utama:
+**Teknologi utama:**
 
 Next.js (App Router)
 
@@ -87,7 +87,7 @@ Context API
 
 TailwindCSS
 
-1. Next.js Overview
+**1. Next.js Overview**
 
 Next.js adalah React Framework yang menyediakan fitur production seperti:
 
@@ -114,8 +114,8 @@ Hybrid rendering (SSR, SSG, CSR)
 Built-in routing
 
 Dalam project ini digunakan Next.js App Router.
-
-Folder utama:
+**
+Folder utama:**
 
 app/
 components/
@@ -123,9 +123,10 @@ hooks/
 lib/
 context/
 types/
-2. App Router
 
-App Router adalah sistem routing modern di Next.js yang berbasis file system.
+**2. App Router
+**
+_App Router adalah sistem routing modern di Next.js yang berbasis file system._
 
 Folder:
 
@@ -145,10 +146,9 @@ Contoh lain:
 
 app/products/page.tsx
 
-Route:
+Route: /products
 
-/products
-3. Routing & Dynamic Routing
+**3. Routing & Dynamic Routing**
 Static Routing
 
 Routing statis dibuat dari struktur folder.
@@ -184,7 +184,7 @@ const { id } = useParams()
 
 Digunakan untuk fetch product detail.
 
-4. Component Architecture (Server vs Client)
+**4. Component Architecture (Server vs Client)**
 
 Next.js menggunakan dua jenis komponen:
 
@@ -238,7 +238,7 @@ useState
 useEffect
 useQuery
 onClick
-5. Layout System
+**5. Layout System**
 
 File:
 
@@ -265,7 +265,7 @@ Contoh:
 
 Konsep ini mirip Layout Component di React.
 
-6. Data Fetching
+**6. Data Fetching**
 
 Project ini menggunakan TanStack Query untuk data fetching.
 
@@ -284,7 +284,7 @@ Data fetching tidak dilakukan langsung di component, tetapi melalui custom hooks
 Folder:
 
 hooks/
-7. API Integration (REST)
+**7. API Integration (REST)**
 
 Project ini menggunakan REST API.
 
@@ -341,7 +341,7 @@ setTimeout()
 Di production biasanya menggunakan:
 
 POST /cart
-8. TanStack Query
+**8. TanStack Query**
 
 TanStack Query adalah library untuk server state management.
 
@@ -415,7 +415,7 @@ PUT
 
 DELETE
 
-9. Global State Management
+**9. Global State Management**
 
 Project ini menggunakan React Context untuk global state.
 
@@ -471,7 +471,7 @@ React Hot Toast
 
 Sonner
 
-10. Component Architecture
+**10. Component Architecture**
 
 Folder:
 
@@ -531,7 +531,7 @@ Menampilkan placeholder UI.
 
 Digunakan untuk meningkatkan UX performance perception.
 
-11. Styling
+**11. Styling**
 
 Project ini menggunakan TailwindCSS.
 
@@ -551,7 +551,8 @@ grid grid-cols-5 gap-6
 rounded-xl
 shadow-sm
 hover:shadow-lg
-12. Providers System
+
+**12. Providers System**
 
 File:
 
@@ -567,7 +568,7 @@ ToastProvider
 RouterProvider
 
 Struktur:
-
+```
 <QueryClientProvider>
   <ToastProvider>
     <CartProvider>
@@ -577,7 +578,7 @@ Struktur:
     </CartProvider>
   </ToastProvider>
 </QueryClientProvider>
-
+```
 Tujuannya agar semua halaman dapat mengakses:
 
 query state
@@ -588,10 +589,10 @@ toast
 
 router
 
-13. Data Flow
+**13. Data Flow**
 
 Alur data dalam aplikasi:
-
+```
 Component
 ↓
 Custom Hook
@@ -599,17 +600,16 @@ Custom Hook
 API Layer
 ↓
 External API
-
-Contoh flow:
-
+```
+ flow:
+```
 ProductsPage
 ↓
 useProducts()
 ↓
 ProductAPI.getAll()
-↓
-FakeStore API
-14. Advantages of This Architecture
+```
+**14. Advantages of This Architecture**
 
 Keuntungan architecture ini:
 
