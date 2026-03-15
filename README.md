@@ -1,3 +1,34 @@
-# Web-AlproShop
+# Project Documentation
 
-AlproShop is a simple e-commerce web application built using Next.js, TypeScript, and Tailwind CSS. The application provides core online shopping features such as product browsing, product search, cart management, and a checkout system. The interface is designed to be clean, responsive, and user-friendly to simulate a real online store experience.
+## Overview
+This project is a comprehensive application for online shopping, designed to provide users with a seamless buying experience.
+
+## Features
+- User Authentication
+- Product Categories
+- Shopping Cart
+- Order Management
+- Payment Integration
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/setiAjiid/Web-AlproShop.git
+   ```
+2. Install dependencies:
+   ```bash
+   cd Web-AlproShop
+   npm install
+   ```
+
+## Usage
+To start the application:
+```bash
+npm start
+```
+
+## Contributing
+We welcome contributions! Please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
