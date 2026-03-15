@@ -2,6 +2,8 @@
 
 A modern e-commerce web application built with **Next.js**, **TypeScript**, and **Tailwind CSS**. Web-AlproShop provides a complete online shopping experience with product browsing, advanced search, cart management, and a secure checkout system.
 
+Note: This documentation is not entirely accurate as it was created by AI. It is for overview purposes only.
+
 ## 🚀 Features
 
 - ✅ **Product Browsing** - Explore a wide range of products with detailed information
